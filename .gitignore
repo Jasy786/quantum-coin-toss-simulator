@@ -1,3 +1,43 @@
+# Virtual Environment
+
 venv/
-__pycache__/
+.venv/
+
+# Python Cache
+
+**pycache**/
 *.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+
+.ipynb_checkpoints/
+
+# VS Code
+
+.vscode/
+
+# PyCharm
+
+.idea/
+
+# Operating System Files
+
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+
+.env
+
+# Build Files
+
+build/
+dist/
+*.egg-info/
+
+# Test Coverage
+
+.coverage
+htmlcov/
