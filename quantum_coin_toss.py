@@ -1,22 +1,20 @@
 from qiskit import QuantumCircuit
 from qiskit_aer import AerSimulator
+from qiskit.visualization import plot_histogram
+import matplotlib.pyplot as plt
 
-# Create a quantum circuit
 qc = QuantumCircuit(1, 1)
 
-# Put qubit into superposition
 qc.h(0)
-
-# Measure qubit
 qc.measure(0, 0)
 
-# Run simulation
 simulator = AerSimulator()
-job = simulator.run(qc, shots=1000)
-result = job.result()
+result = simulator.run(qc, shots=1000).result()
 
-# Get result
 counts = result.get_counts()
 
 print("Quantum Coin Toss Result:")
 print(counts)
+
+fig = plot_histogram(counts)
+plt.show(block=True)
