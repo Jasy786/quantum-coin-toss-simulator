@@ -84,23 +84,11 @@ with approximately equal probability.
 
 
 
-The circuit consists of:
+The following circuit places a qubit into superposition using a Hadamard gate and then performs a measurement.
 
 
 
-1\. One qubit
-
-2\. One Hadamard gate
-
-3\. One measurement operation
-
-
-
-Circuit structure:
-
-
-
-q ── H ── M
+!\[Quantum Circuit](circuit.png)
 
 
 
@@ -130,11 +118,15 @@ q ── H ── M
 
 
 
-\* quantum\_coin\_toss.py
+\* quantum\_coin\_toss.py — Main quantum coin toss simulator
 
-\* draw\_circuit.py
+\* draw\_circuit.py — Generates circuit visualization
 
-\* README.md
+\* circuit.png — Quantum circuit diagram
+
+\* histogram.png — Measurement histogram
+
+\* README.md — Project documentation
 
 
 
@@ -170,11 +162,15 @@ The results demonstrate approximately 50% probability for each outcome, validati
 
 
 
+```python
+
 Quantum Coin Toss Result:
 
 
 
 {'0': 487, '1': 513}
+
+```
 
 
 
@@ -182,15 +178,19 @@ Quantum Coin Toss Result:
 
 
 
-\## Visualization
+\## Measurement Histogram
 
 
 
-Histogram representation of the measurement outcomes:
+Histogram representation of the measurement outcomes obtained from 1000 shots.
 
 
 
-(Add your actual screenshot here after generating the histogram.)
+!\[Measurement Histogram](histogram.png)
+
+
+
+The near-equal distribution of outcomes validates the probabilistic nature of quantum superposition and quantum measurement.
 
 
 
@@ -216,6 +216,8 @@ Through this project I learned:
 
 \* Qiskit programming
 
+\* Data visualization using Matplotlib
+
 \* Git and GitHub workflow
 
 
@@ -236,7 +238,7 @@ Future enhancements include:
 
 \* Bell State and Quantum Entanglement Simulator
 
-\* Grover Search Algorithm
+\* Grover's Search Algorithm
 
 \* Quantum Key Distribution (BB84)
 
@@ -248,11 +250,55 @@ Future enhancements include:
 
 
 
+\## How to Run
+
+
+
+\### Install Dependencies
+
+
+
+```bash
+
+pip install qiskit qiskit-aer matplotlib
+
+```
+
+
+
+\### Run the Simulator
+
+
+
+```bash
+
+python quantum\_coin\_toss.py
+
+```
+
+
+
+\### Generate Circuit Diagram
+
+
+
+```bash
+
+python draw\_circuit.py
+
+```
+
+
+
+\---
+
+
+
 \## Author
 
 
 
-Jasmine Sultana
+\*\*Jasmine Sultana\*\*
 
 
 
@@ -261,6 +307,10 @@ M.Tech (Artificial Intelligence)
 
 
 Vidyasagar University
+
+
+
+Interested in Quantum Computing, Quantum Machine Learning, Artificial Intelligence, and Data Science.
 
 
 
